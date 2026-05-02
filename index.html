@@ -204,7 +204,6 @@
             background: #0a0a15;
         }
 
-        /* Hero visual - FULL SCREEN IMAGE */
         .hero-visual {
             position: absolute;
             top: 0;
@@ -222,17 +221,16 @@
             animation: floatShell 8s ease-in-out infinite;
         }
 
-        /* Ocean background elements */
         .ocean-bg {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 40%;
-            background: linear-gradient(180deg, 
-                transparent 0%, 
-                rgba(5, 15, 35, 0.4) 30%, 
-                rgba(8, 20, 45, 0.7) 60%, 
+            background: linear-gradient(180deg,
+                transparent 0%,
+                rgba(5, 15, 35, 0.4) 30%,
+                rgba(8, 20, 45, 0.7) 60%,
                 rgba(2, 8, 25, 0.95) 100%);
             z-index: 2;
             pointer-events: none;
@@ -244,11 +242,11 @@
             left: 0;
             width: 100%;
             height: 150px;
-            background: linear-gradient(180deg, 
-                transparent 0%, 
-                rgba(212, 167, 116, 0.06) 30%, 
-                rgba(212, 167, 116, 0.1) 50%, 
-                rgba(180, 130, 80, 0.05) 70%, 
+            background: linear-gradient(180deg,
+                transparent 0%,
+                rgba(212, 167, 116, 0.06) 30%,
+                rgba(212, 167, 116, 0.1) 50%,
+                rgba(180, 130, 80, 0.05) 70%,
                 rgba(10, 25, 50, 0.3) 100%);
             z-index: 2;
             animation: shimmer 8s linear infinite;
@@ -262,10 +260,10 @@
             right: 0;
             width: 50%;
             height: 50%;
-            background: radial-gradient(ellipse at 70% 80%, 
-                rgba(255, 120, 50, 0.15) 0%, 
-                rgba(255, 80, 30, 0.08) 20%, 
-                rgba(200, 50, 80, 0.05) 40%, 
+            background: radial-gradient(ellipse at 70% 80%,
+                rgba(255, 120, 50, 0.15) 0%,
+                rgba(255, 80, 30, 0.08) 20%,
+                rgba(200, 50, 80, 0.05) 40%,
                 transparent 70%);
             z-index: 2;
             pointer-events: none;
@@ -290,7 +288,6 @@
             pointer-events: none;
         }
 
-        /* Sparkles */
         .sparkles-container {
             position: absolute;
             width: 100%;
@@ -344,7 +341,6 @@
         .ripple-ring:nth-child(2) { animation-delay: 1.5s; width: 200px; height: 55px; }
         .ripple-ring:nth-child(3) { animation-delay: 3s; width: 250px; height: 70px; }
 
-        /* Overlay untuk teks */
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -353,14 +349,13 @@
             height: 100%;
             z-index: 4;
             pointer-events: none;
-            background: linear-gradient(90deg, 
-                rgba(10, 10, 21, 0.85) 0%, 
-                rgba(10, 10, 21, 0.5) 35%, 
-                rgba(10, 10, 21, 0.1) 55%, 
+            background: linear-gradient(90deg,
+                rgba(10, 10, 21, 0.85) 0%,
+                rgba(10, 10, 21, 0.5) 35%,
+                rgba(10, 10, 21, 0.1) 55%,
                 rgba(10, 10, 21, 0.02) 100%);
         }
 
-        /* Hero content */
         .hero-text {
             position: relative;
             z-index: 10;
@@ -653,7 +648,6 @@
             width: 70%;
         }
 
-        /* PRODUCT IMAGE */
         .product-image {
             width: 100%;
             display: flex;
@@ -756,12 +750,35 @@
             width: 100%;
             max-width: 100%;
             margin: 0;
-            padding: 120px 60px;
+            padding: 0;
+            overflow: hidden;
+            background: #040810;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        .about-content-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 80px 60px;
             display: flex;
             align-items: center;
             gap: 60px;
-            background: linear-gradient(180deg, #040810 0%, #061020 30%, #081830 50%, #040810 100%);
-            overflow: hidden;
+            background: linear-gradient(180deg, #040810 0%, #061020 50%, #081830 100%);
         }
 
         .underwater-light-rays {
@@ -815,37 +832,6 @@
         .bubble:nth-child(6) { left: 85%; animation-delay: 5s; animation-duration: 5.5s; }
         .bubble:nth-child(7) { left: 15%; animation-delay: 2.5s; animation-duration: 6.5s; }
         .bubble:nth-child(8) { left: 60%; animation-delay: 4.5s; animation-duration: 8.5s; }
-
-        .about-visual {
-            flex: 1;
-            position: relative;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .underwater-platform {
-            position: relative;
-            width: 350px;
-            height: 350px;
-            background: radial-gradient(circle, rgba(50, 80, 100, 0.25) 0%, rgba(30, 50, 70, 0.4) 60%, rgba(15, 25, 40, 0.6) 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 100px rgba(100, 160, 200, 0.1);
-        }
-
-        .platform-product {
-            font-size: 130px;
-            background: linear-gradient(180deg, #ff4d6a 0%, #c41e3a 50%, #8b0000 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            filter: drop-shadow(0 20px 40px rgba(196, 30, 58, 0.5));
-            animation: floatShell 7s ease-in-out infinite;
-        }
 
         .about-content {
             flex: 1;
@@ -1158,9 +1144,9 @@
                 max-width: 100%;
             }
             .hero-overlay {
-                background: linear-gradient(180deg, 
-                    rgba(10, 10, 21, 0.9) 0%, 
-                    rgba(10, 10, 21, 0.6) 50%, 
+                background: linear-gradient(180deg,
+                    rgba(10, 10, 21, 0.9) 0%,
+                    rgba(10, 10, 21, 0.6) 50%,
                     rgba(10, 10, 21, 0.3) 100%);
             }
             .features-bar {
@@ -1168,13 +1154,16 @@
             }
             .best-seller,
             .testimonials,
-            .newsletter,
-            .about-section {
+            .newsletter {
                 padding: 70px 30px;
             }
-            .about-section {
+            .about-content-wrapper {
                 flex-direction: column;
+                padding: 60px 30px;
                 text-align: center;
+            }
+            .about-image img {
+                height: 40vh;
             }
             .testimonial-grid {
                 grid-template-columns: 1fr;
@@ -1198,6 +1187,9 @@
             }
             .product-card {
                 max-width: 300px;
+            }
+            .about-content h2 {
+                font-size: 36px;
             }
         }
 
@@ -1242,12 +1234,11 @@
                 width: 180px;
                 height: 180px;
             }
-            .underwater-platform {
-                width: 250px;
-                height: 250px;
+            .about-image img {
+                height: 30vh;
             }
-            .platform-product {
-                font-size: 90px;
+            .about-content-wrapper {
+                padding: 50px 20px;
             }
             .about-content h2 {
                 font-size: 28px;
@@ -1261,8 +1252,7 @@
             }
             .best-seller,
             .testimonials,
-            .newsletter,
-            .about-section {
+            .newsletter {
                 padding: 60px 20px;
             }
         }
@@ -1284,18 +1274,15 @@
 
     <!-- ==================== HERO SECTION ==================== -->
     <section class="hero" id="home">
-        <!-- Hero Visual - FULL SCREEN IMAGE -->
         <div class="hero-visual">
             <img src="hero.png" alt="PACIFIC Hero" class="hero-img">
         </div>
 
-        <!-- Ocean background elements -->
         <div class="ocean-bg"></div>
         <div class="ocean-surface"></div>
         <div class="sunset-sky"></div>
         <div class="golden-light-rays"></div>
 
-        <!-- Sparkles -->
         <div class="sparkles-container">
             <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
             <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
@@ -1303,17 +1290,14 @@
             <div class="sparkle"></div><div class="sparkle"></div><div class="sparkle"></div>
         </div>
 
-        <!-- Water ripples -->
         <div class="water-ripples">
             <div class="ripple-ring"></div>
             <div class="ripple-ring"></div>
             <div class="ripple-ring"></div>
         </div>
 
-        <!-- Overlay untuk teks -->
         <div class="hero-overlay"></div>
 
-        <!-- Hero Text -->
         <div class="hero-text">
             <p class="hero-pre-title">Reveal Your True Glow</p>
             <h1>PACIFIC<br>SKIN CARE</h1>
@@ -1352,7 +1336,6 @@
         <p class="section-label">Our Best Seller</p>
         <h2 class="section-title">Produk Pilihan untuk Kulit Bercahaya</h2>
         <div class="product-grid">
-            <!-- Product 1 - Rose Glow Toner -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="body-toner.png" alt="Rose Glow Toner" class="product-img">
@@ -1362,7 +1345,6 @@
                 <div class="stars-display">★★★★★</div>
                 <button class="btn-add-cart">Add to Cart</button>
             </div>
-            <!-- Product 2 - Rose Glow Lotion -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="body-lotion.png" alt="Rose Glow Lotion" class="product-img">
@@ -1372,7 +1354,6 @@
                 <div class="stars-display">★★★★★</div>
                 <button class="btn-add-cart">Add to Cart</button>
             </div>
-            <!-- Product 3 - Rose Brightening Serum -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="body-serum.png" alt="Rose Brightening Serum" class="product-img">
@@ -1382,7 +1363,6 @@
                 <div class="stars-display">★★★★★</div>
                 <button class="btn-add-cart">Add to Cart</button>
             </div>
-            <!-- Product 4 - Rose Night Glow Cream -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="night-cream.png" alt="Rose Night Glow Cream" class="product-img">
@@ -1397,24 +1377,26 @@
 
     <!-- ==================== ABOUT SECTION ==================== -->
     <section class="about-section" id="about">
-        <div class="underwater-light-rays"></div>
-        <div class="underwater-particles">
-            <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
-            <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
-            <div class="bubble"></div><div class="bubble"></div>
+        <!-- Full width image -->
+        <div class="about-image">
+            <img src="produk.png" alt="Pacific Product">
         </div>
 
-        <div class="about-visual">
-            <div class="underwater-platform">
-                <i class="fas fa-flask platform-product"></i>
+        <!-- Content wrapper -->
+        <div class="about-content-wrapper">
+            <div class="underwater-light-rays"></div>
+            <div class="underwater-particles">
+                <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+                <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+                <div class="bubble"></div><div class="bubble"></div>
             </div>
-        </div>
 
-        <div class="about-content">
-            <p class="section-label">About Pacific Skin Care</p>
-            <h2>Terinspirasi dari Keindahan Alam untuk Kulit yang Sempurna</h2>
-            <p>PACIFIC Skin Care terinspirasi dari keindahan laut, mawar merah, dan kemurnian mutiara. Kami percaya bahwa setiap wanita berhak merasa percaya diri dengan kulit yang sehat dan bercahaya.</p>
-            <a href="#" class="btn-outline">Learn More</a>
+            <div class="about-content">
+                <p class="section-label">About Pacific Skin Care</p>
+                <h2>Terinspirasi dari Keindahan Alam untuk Kulit yang Sempurna</h2>
+                <p>PACIFIC Skin Care terinspirasi dari keindahan laut, mawar merah, dan kemurnian mutiara. Kami percaya bahwa setiap wanita berhak merasa percaya diri dengan kulit yang sehat dan bercahaya.</p>
+                <a href="#" class="btn-outline">Learn More</a>
+            </div>
         </div>
     </section>
 
